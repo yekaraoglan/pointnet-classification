@@ -14,7 +14,7 @@ pip install -r requirements.txt
 Download the dataset from [here](https://www.kaggle.com/datasets/balraj98/modelnet10-princeton-3d-object-dataset?resource=download) and unzip it to `data/` folder.
 
 Example of a chair from the dataset:
-![Example chair](figure.png)
+![Example chair](figures/figure.png)
 
 ### Folder Structure
 ```
@@ -26,9 +26,12 @@ Example of a chair from the dataset:
 |   |   |   |   ├── ...
 │   │   │   ├── bed
 │   │   │   ├── ...
-├── main.py
-├── model.py
-├── utils.py
+├──  src
+│   ├── data.py
+│   ├── main.py
+│   ├── model.py
+│   ├── util.py
+|   ├── preprocessing.py
 ├── requirements.txt
 ├── README.md
 ```
@@ -50,15 +53,3 @@ python main.py --mode test
 - [Another PyTorch implementation of PointNet](https://www.kaggle.com/code/balraj98/pointnet-for-3d-object-classification-pytorch/notebook) (util functions are borrowed from this notebook)
 - [ModelNet10 dataset](https://modelnet.cs.princeton.edu/)
 - [ModelNet10 dataset on Kaggle](https://www.kaggle.com/balraj98/modelnet10-princeton-3d-object-dataset)
-
-### Citation
-```
-@misc{qi2016pointnet,
-      title={PointNet: Deep Learning on Point Sets for 3D Classification and Segmentation}, 
-      author={Charles R. Qi and Hao Su and Kaichun Mo and Leonidas J. Guibas},
-      year={2016},
-      eprint={1612.00593},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
-}
-```
